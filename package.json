@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pnpm run --parallel dev"
+    "dev": "pnpm run --parallel dev",
+    "build:server": "pnpm --filter server build",
+    "build:web": "pnpm --filter web build",
+    "start:server" : "pnpm --filter server start:prod",
+    "start:web" : "pnpm --filter web start"
   },
   "keywords": [],
   "author": "Austin Johnson <austin@austinjohnson.me> (https://www.austinjohnson.me/)",
